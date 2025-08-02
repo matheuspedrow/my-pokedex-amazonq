@@ -11,7 +11,7 @@ Esta Pokédex oferece uma experiência completa de exploração de Pokémon com:
 - **Filtros Avançados**: Filtragem por tipo e geração
 - **Detalhes Detalhados**: Visualização completa de estatísticas e informações
 - **Interface Responsiva**: Design adaptável para diferentes dispositivos
-- **Paginação**: Navegação eficiente através das páginas
+- **Paginação**: Navegação eficiente através das páginas.
 
 ## 🏗️ Arquitetura do Projeto
 
