@@ -15,6 +15,7 @@ import {
 
 import { types, generations, pokesPerGen } from "./extras";
 import { readTypes } from "./apiFunctions";
+import { typeIcons, generationIcons } from "./imageImports";
 
 /**
  * Manipula a seleção de tipos na interface
@@ -48,7 +49,7 @@ export const createTypesSearch = (arrayOfPokemons) => {
   types.forEach((type) => {
     const newType = document.createElement("div");
     newType.classList.add("tooltips");
-    newType.innerHTML = `<img src="./images/types/${type}.svg" alt="Filtrar por tipo ${capitalizeFirstLetter(
+    newType.innerHTML = `<img src="${typeIcons[type]}" alt="Filtrar por tipo ${capitalizeFirstLetter(
       type
     )}" class="icon ${type}"></img>
 		<span class="tooltiptext">${capitalizeFirstLetter(type)}</span>`;
@@ -68,7 +69,7 @@ const createGenerationSearch = (arrayOfPokemons) => {
   generations.forEach((type) => {
     const newType = document.createElement("div");
     newType.classList.add("tooltips");
-    newType.innerHTML = `<img src="./images/generation/${type}.png" alt="Filtrar por geração ${capitalizeFirstLetter(
+    newType.innerHTML = `<img src="${generationIcons[type]}" alt="Filtrar por geração ${capitalizeFirstLetter(
       type
     )}" class="gen-icon ${type}"></img>
 		<span class="tooltiptext">${capitalizeFirstLetter(type)}</span>`;

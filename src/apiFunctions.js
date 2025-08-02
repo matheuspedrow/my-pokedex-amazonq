@@ -1,3 +1,5 @@
+import notFoundGif from "/images/error/not-found.gif";
+
 /**
  * Cria um array com números sequenciais de 1 até o tamanho especificado
  * @param {number} size - Tamanho do array a ser criado
@@ -83,7 +85,7 @@ export const loadPokemons = async (numberOfPokemons) => {
           id: pokemon,
           name: `pokemon-${pokemon}`,
           types: [{ type: { name: "unknown" } }],
-          sprites: { front_default: "./images/error/not-found.gif" },
+          sprites: { front_default: notFoundGif },
           stats: [
             { base_stat: 0 },
             { base_stat: 0 },

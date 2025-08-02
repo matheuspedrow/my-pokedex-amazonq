@@ -1,4 +1,5 @@
 import { readTypes } from "./apiFunctions";
+import { typeIcons } from "./imageImports";
 
 // Elementos DOM principais
 export const mainBox = document.querySelector(".pokes");
@@ -48,10 +49,10 @@ const createImages = (types) => {
   const pokeTypes = readTypes(types);
 
   if (pokeTypes.length === 1)
-    return `<img src="./images/types/${pokeTypes}.svg" alt="Tipo ${pokeTypes}" class="icon ${pokeTypes}"></img>`;
+    return `<img src="${typeIcons[pokeTypes]}" alt="Tipo ${pokeTypes}" class="icon ${pokeTypes}"></img>`;
 
-  return `<img src="./images/types/${pokeTypes[0]}.svg" alt="Tipo ${pokeTypes[0]}" class="icon ${pokeTypes[0]}"></img>
-					<img src="./images/types/${pokeTypes[1]}.svg" alt="Tipo ${pokeTypes[1]}" class="icon ${pokeTypes[1]}"></img>`;
+  return `<img src="${typeIcons[pokeTypes[0]]}" alt="Tipo ${pokeTypes[0]}" class="icon ${pokeTypes[0]}"></img>
+					<img src="${typeIcons[pokeTypes[1]]}" alt="Tipo ${pokeTypes[1]}" class="icon ${pokeTypes[1]}"></img>`;
 };
 
 /**
