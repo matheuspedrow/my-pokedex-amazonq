@@ -65,7 +65,7 @@ pokedex/
 1. **Clone o repositório**
 
    ```bash
-   https://github.com/matheuspedrow/pokedex-amazonq.git
+   https://github.com/matheuspedrow/my-pokedex-amazonq.git
    cd pokedex-amazonq
    ```
 
