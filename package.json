@@ -1,0 +1,36 @@
+{
+  "name": "pokedex-interativa",
+  "version": "1.0.0",
+  "description": "Uma Pokédex web moderna e responsiva que permite explorar e buscar Pokémon de todas as gerações usando a API oficial do Pokémon",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "pokemon",
+    "pokedex",
+    "api",
+    "javascript",
+    "vite",
+    "bootstrap",
+    "pokeapi"
+  ],
+  "author": "Matheus Pedro",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspedrow/pokedex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matheuspedrow/pokedex/issues"
+  },
+  "homepage": "https://github.com/matheuspedrow/pokedex#readme",
+  "dependencies": {
+    "vite": "^4.5.14"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
